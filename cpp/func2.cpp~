@@ -3,6 +3,11 @@
 
 using namespace std;
 
+template <class T>
+bool eqlZero(T x) {
+  return x * x < 0.000000001;
+}
+
 class Function {
 public:
   double operator ()(double x){
@@ -62,4 +67,4 @@ int main()
   cout << result;
  
 	return 0;
-}
+} 
